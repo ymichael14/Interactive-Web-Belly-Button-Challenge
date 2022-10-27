@@ -66,6 +66,7 @@ const renderGraph = () => {
     
 }
 
+
 d3.json("assets/data/samples.json").then(({names}) => {
     names.forEach(name => {
         d3.select('select').append('option').text(name);
